@@ -1,0 +1,135 @@
+
+@keyframes slideInRight
+  0% 
+    transform: translateX(100%)
+  
+  100% 
+    transform: translateX(0)
+
+@keyframes slideInLeft
+  0% 
+    transform: translateX(-100%)
+  
+  100% 
+    transform: translateX(0)
+
+#navigation
+  width: 100%
+  border: solid #fff
+  position: relative
+  background-color: black
+
+  .logo
+    position: absolute
+    top: 34px
+    left: 24px
+    z-index: 99 !important
+
+    @media only screen and (max-width: 1200px)
+      visibility: hidden
+      opacity: 0
+      transform: translate3d(0px, -10px, 0px)
+
+  .navbar-list
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 99
+
+    .menu
+      display: flex
+      list-style: none
+      margin-top: 45px
+      margin-right: 40px
+
+      @media only screen and ( max-width: 1024px )
+        &.is-open
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: flex-start
+          background-color: #fff
+          width: 75vw
+          height: 100vh
+          margin: 0
+          // transition-duration: 2000ms
+          // transition-property: transform
+          // transition-timing-function: ease-in
+          // transform: translateX(100%)
+          animation: slideInRight 2s ease-in 0s 1
+  
+          @media only screen and ( max-width: 740px )
+            width: 100vw
+            
+          .menu-item
+            color: #000
+            font-weight: bold
+            font-size: 33px
+            line-height: 2
+
+      .menu-item
+        margin-left: 20px
+        text-transform: lowercase
+        font-size: 16px
+        color: #fff
+        text-decoration: none
+
+      @media only screen and ( max-width: 1024px )
+        display: none
+
+    .burger
+      color: #fff
+      margin-top: 45px
+      margin-right: 40px
+      display: none
+
+      @media only screen and ( max-width: 1024px )
+        display:  block
+
+      mat-icon
+        font-size: 30px
+
+    .close
+      position: absolute
+      z-index: 999 !important
+      color: #000
+      font-size: 40px
+      top: 5%
+      right: 10%
+      animation: slideInRight 2s ease-in 0s 1
+      an
+
+  .home:after
+    content: ''
+    position: absolute
+    width: 40px
+    transform: scaleX(0)
+    height: 2px
+    bottom: 15px
+    left: 61px
+    background-color: #fff
+    transform-origin: bottom left
+    transition: transform 0.25s ease-out
+
+  .home:hover:after
+    transform: scaleX(1)
+    transform-origin: bottom left
+
+  .contact:after
+    content: ''
+    position: absolute
+    width: 51px
+    transform: scaleX(0)
+    height: 2px
+    bottom: 15px
+    left: 123px
+    background-color: #fff
+    transform-origin: bottom left
+    transition: transform 0.25s ease-out
+
+  .contact:hover:after
+    transform: scaleX(1)
+    transform-origin: bottom left
+
+  &.is-scrolled
+    color: #000

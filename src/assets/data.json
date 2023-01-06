@@ -1,0 +1,16 @@
+{
+  "sliders":[
+    {"img": "/assets/download.jpg", "video": "/assets/1_Grow_up_Stage_Modul_video.mp4", "alt": "", "text": "Grow Up", "p": "Stories of a new generation"},
+    {"img": "/assets/download-1.jpg", "video": "/assets/IAA_Makingof_8Sec_L.mp4", "alt": "",  "text": "Jes! All veggie", "p": "Our first ever sweet campaign"},
+    {"img": "/assets/download-2.jpg", "video": "/assets/TimeToLookUpAgain_8Sec_L.mp4", "alt": "", "text": "Easy Driver", "p": "Mercedes AMG GT C Roadster"},
+    {"img": "/assets/download-3.jpg", "video": "/assets/EasyRider_8Sec_L.mp4", "alt": "",  "text": "Unleash your senses", "p": "The new C-Class Cabriolet"},
+    {"img": "/assets/download-4.jpg", "video": "/assets/katjes_stage-1.mp4", "alt": "", "text": "Flip the switch", "p": "Electric Intelligence by mercedes"},
+    {"img": "/assets/download-5.jpg", "video": "/assets/risk_1.mp4", "alt": "", "text": "Luxury in motion", "p": "The FO15 Concept car"},
+    {"img": "/assets/download-6.jpg", "video": "/assets/Mercedes_Leon_stage.mp4", "alt": "", "text": "Mercedes Leon stage", "p": "mercedes"},
+    {"img": "/assets/download-7.jpg", "video": "/assets/stage_xmas.mp4", "alt": "", "text": "Christmas stages", "p": "family time"},
+    {"img": "/assets/download-8.jpg", "video": "/assets/F1_stage-1.mp4", "alt": "", "text": "The Circle", "p": "The BMW design"},
+    {"img": "/assets/download-9.jpg", "video": "/assets/bmw_stage_3.mp4", "alt": "", "text": "Easy Driver", "p": "a car"},
+    {"img": "/assets/download-10.jpg", "video": "/assets/eq_stage_video.mp4", "alt": "", "text": "the EQ", "p": "another car"},
+    {"img": "/assets/download-11.jpg", "video": "/assets/stage_g_class_dna.mp4", "alt": "", "text": "The Beast", "p": "still a car"}
+  ]
+}

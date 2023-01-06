@@ -1,0 +1,22 @@
+<nav id="navigation">
+  <a class="logo">
+    <img width="100px" src="../../assets/aglet_logo.svg">
+  </a>
+
+  <div class="navbar-list">
+    <span *ngIf="!isMenuOpen" (click)="toggleMenu()">
+      <mat-icon class="burger" [ngClass]="{'fixed': pageIsScrolled}">menu</mat-icon>
+    </span>
+    <span *ngIf="isMenuOpen" (click)="toggleMenu()">
+      <mat-icon class="close">close</mat-icon>
+    </span>
+    <ul class="menu" [class.is-open]="isMenuOpen">
+      <li>
+        <a class="menu-item home" href="#">Home</a>
+      </li>
+      <li>
+        <a class="menu-item contact" href="contact">contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

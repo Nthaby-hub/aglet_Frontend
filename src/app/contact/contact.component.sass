@@ -1,0 +1,192 @@
+.container
+  overflow-x: hidden
+   
+#myVideo 
+  position: relative
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+
+  @media only screen and (max-width: 740px)
+    display: none
+
+  @media only screen and (max-width: 1200px)
+    min-width: auto
+    min-height: auto
+
+.content
+  position: relative
+  margin-left: 8vw
+  margin-top: 7vh
+  margin-bottom: 7.5vh
+  // height: 100vh
+  display: flex
+  align-content: center
+
+  p
+    font-size: 30px
+    font-weight: bold
+    color: #171717
+    line-height: 1.4
+    padding-left: 9.5vw
+    padding-right: 20vw
+
+    @media only screen and (max-width: 1200px)
+      padding-left: 3.5vw
+      padding-right: 15vw
+      font-size: 26px
+
+    @media only screen and (max-width: 740px)
+      font-size: 20px
+      padding-left: 9.5px
+      padding-right: 20px
+  img
+    position: relative
+    top: 130px
+    height: 590px
+
+    @media only screen and (max-width: 1200px)
+      height: 490px
+      top: 65px
+
+    @media only screen and (max-width: 940px)
+      height: 390px
+      top: 130px
+
+    @media only screen and (max-width: 740px)
+      display: none
+
+.cont-info
+  padding-top: 95px
+  padding-bottom: 190px
+  position: absolute
+  display: flex
+  width: 100vw
+
+  @media only screen and (max-width: 740px)
+    background-color: #000
+    color: #d7d7d7
+
+  .jpeg
+    img
+      width: 495px
+      margin-left: 130px
+
+      @media only screen and (max-width: 1100px)
+        width: 40vw
+
+      @media only screen and (max-width: 740px)
+        width: 50vw
+        margin-left: 0
+
+  h1
+    color: #202022
+    font-weight: bold
+    font-size: 13vw
+    position: absolute
+    top: 30%
+    left: 645px
+    transform: translate(-50%,-50%)
+
+    @media only screen and (max-width: 1100px)
+      position: absolute
+      top: 30%
+      left: 55%
+      transform: translate(-50%,-40%)
+
+    @media only screen and (max-width: 740px)
+      color: #fff
+
+  .details
+    position: relative
+    bottom: 0
+    left: 0
+    transform: translate(0%,47%)
+    padding-left: 4vw
+
+    @media only screen and ( max-width: 500px )
+      p
+        font-size: 2.7vw
+        line-height: 4vw
+      ul
+        font-size: 2.7vw
+        line-height: 4vw
+
+      .media
+        a
+          img
+            width: 15px
+    
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+
+      li
+        a
+          text-decoration: none
+          color: #000
+
+          @media only screen and (max-width: 740px)
+            color: #6c6c6c
+
+    .media
+      a
+        img
+          margin: 0px 0px 0px 13px
+          top: 6px
+          position: relative
+
+          @media only screen and (max-width: 740px)
+            background-color: #fff
+
+h2
+  position: absolute
+  color: #f1f1f1
+  font-size: 15vw
+  font-weight: bold
+  left: 50%
+  top: 20%
+  transform: translate(-50%,0%)
+
+  @media only screen and (max-width: 740px)
+    color: #010101
+
+.top
+  @media only screen and (max-width: 740px)
+    height: 100vh
+
+.downBtn
+  padding: 10px
+  border: none
+  color: #fff
+  background-color: rgba(0, 0, 0, 0)
+  cursor: pointer
+  right: 3vw
+  top: 90vh
+  position: absolute
+
+  @media only screen and (max-width: 740px)
+    color: #686868
+
+@keyframes slideInLeft
+  0% 
+    transform: translateX(-100%)
+  
+  100% 
+    transform: translateX(0)
+
+.image2
+  animation: 2s ease-out 0s 1 slideInLeft
+  
+@keyframes slideInRight
+  0% 
+    transform: translateX(100%)
+  
+  100% 
+    transform: translateX(0)
+
+.image1
+  animation: 2s ease-out 0s 1 slideInRight
+  

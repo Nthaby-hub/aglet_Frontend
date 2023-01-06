@@ -1,0 +1,12 @@
+<div class="container">
+  <div style="position: relative;" class="slider">
+    <div class="img-container" *ngFor="let i of sliders; let select = index;">
+      <img src="{{i.img}}" alt="{{i.alt}}">
+      <video autoplay loop src="{{i.video}}" type="video/mp4" muted class="vid" loop>
+      </video>
+      <h1>&nbsp;&nbsp; {{i.text}}</h1>
+      <h6>&nbsp;&nbsp;&nbsp;&nbsp; {{i.p}}</h6>
+    </div>
+  </div>
+
+</div>
