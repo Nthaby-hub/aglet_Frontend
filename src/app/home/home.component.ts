@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { DataType } from './datatype';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.data.getData().subscribe((result: DataType) => {
+    this.data.getData().subscribe((result: any) => {
       this.sliders = result.sliders;
     });
 

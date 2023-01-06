@@ -12,6 +12,8 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //triggers the html page to scroll to a specific element
+
   scroll(el: HTMLElement) {
     el.scrollIntoView({behavior: 'smooth'});
 }
