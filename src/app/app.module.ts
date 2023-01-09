@@ -9,15 +9,13 @@ import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuComponent,
-    ContactComponent,
-    FooterComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
